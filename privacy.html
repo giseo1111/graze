@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRAZE — 개인정보처리방침 & 지원</title>
+<style>
+  :root { --bg: #0a0a0f; --surface: #13131c; --accent: #7b6cff; --text: #e8e8f0; --muted: #8888aa; --border: #22223a; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 15px; line-height: 1.7; padding: 0 0 80px; }
+  header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 28px 24px 24px; text-align: center; }
+  .logo { font-size: 28px; font-weight: 800; letter-spacing: 0.12em; color: #fff; }
+  .logo span { color: var(--accent); }
+  .tagline { margin-top: 6px; font-size: 13px; color: var(--muted); letter-spacing: 0.06em; }
+  nav { display: flex; justify-content: center; gap: 0; margin-top: 20px; }
+  nav a { padding: 8px 24px; font-size: 13px; font-weight: 600; text-decoration: none; color: var(--muted); border: 1px solid var(--border); transition: color .2s, border-color .2s; }
+  nav a:first-child { border-radius: 6px 0 0 6px; }
+  nav a:last-child  { border-radius: 0 6px 6px 0; border-left: none; }
+  nav a.active, nav a:hover { color: var(--accent); border-color: var(--accent); }
+  .container { max-width: 680px; margin: 0 auto; padding: 40px 24px 0; }
+  section { display: none; }
+  section.active { display: block; }
+  h2 { font-size: 22px; font-weight: 700; color: #fff; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 15px; font-weight: 700; color: var(--accent); margin: 28px 0 8px; }
+  p { color: var(--muted); margin-bottom: 10px; }
+  ul { color: var(--muted); padding-left: 20px; margin-bottom: 10px; }
+  li { margin-bottom: 4px; }
+  .updated { font-size: 12px; color: var(--muted); margin-bottom: 28px; opacity: 0.6; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 16px; }
+  .card h3 { margin-top: 0; }
+  .contact-btn { display: inline-block; margin-top: 12px; padding: 10px 22px; background: var(--accent); color: #fff; font-size: 14px; font-weight: 600; text-decoration: none; border-radius: 8px; transition: opacity .2s; }
+  .contact-btn:hover { opacity: 0.85; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">GR<span>A</span>ZE</div>
+  <div class="tagline">스치면 강해진다</div>
+  <nav>
+    <a href="#" class="active" onclick="show('privacy',this);return false;">개인정보처리방침</a>
+    <a href="#" onclick="show('support',this);return false;">지원</a>
+  </nav>
+</header>
+<div class="container">
+  <section id="privacy" class="active">
+    <h2>개인정보처리방침</h2>
+    <p class="updated">최종 수정일: 2024년 11월</p>
+    <p>GRAZE(이하 "앱")는 이용자의 개인정보를 소중히 여깁니다. 본 방침은 앱이 수집하는 정보와 그 활용 방법을 설명합니다.</p>
+    <h3>1. 수집하는 정보</h3>
+    <p>앱은 다음과 같은 정보를 수집할 수 있습니다:</p>
+    <ul>
+      <li><strong>게임 플레이 데이터</strong> — 점수, 플레이 시간, 달성 기록 (기기에만 저장)</li>
+      <li><strong>게임 센터 데이터</strong> — 순위표 점수 (Apple Game Center를 통해 처리)</li>
+      <li><strong>구매 정보</strong> — 인앱 구매 처리 (Apple App Store 및 RevenueCat을 통해 처리, 카드 정보 등 결제 정보는 수집하지 않음)</li>
+      <li><strong>광고 데이터</strong> — 광고 표시를 위한 기기 식별자 (AdMob을 통해 처리, 사용자 동의 후 수집)</li>
+    </ul>
+    <h3>2. 정보 활용 목적</h3>
+    <ul>
+      <li>게임 기능 제공 및 진행 상황 저장</li>
+      <li>인앱 구매 처리 및 복원</li>
+      <li>순위표 서비스 제공</li>
+      <li>광고 표시 (광고 제거 구매 시 적용 안 됨)</li>
+    </ul>
+    <h3>3. 제3자 서비스</h3>
+    <p>앱은 다음 제3자 서비스를 사용합니다. 각 서비스의 개인정보처리방침을 확인하세요:</p>
+    <ul>
+      <li>Apple Game Center (순위표)</li>
+      <li>RevenueCat (인앱 구매 관리)</li>
+      <li>Google AdMob (광고)</li>
+    </ul>
+    <h3>4. 데이터 보관 및 삭제</h3>
+    <p>게임 데이터는 사용자의 기기에 로컬로 저장됩니다. 앱을 삭제하면 모든 로컬 데이터가 삭제됩니다. 개인 데이터 삭제를 원하시면 아래 지원 이메일로 문의해 주세요.</p>
+    <h3>5. 아동 개인정보 보호</h3>
+    <p>앱은 만 14세 미만 아동을 대상으로 의도적으로 개인정보를 수집하지 않습니다. 아동 이용자의 개인정보가 수집된 사실을 발견하시면 즉시 삭제 조치하겠습니다.</p>
+    <h3>6. 추적 및 광고 (ATT)</h3>
+    <p>iOS에서 앱을 처음 실행할 때 Apple의 앱 추적 투명성(ATT) 정책에 따라 광고 개인화를 위한 추적 동의를 요청합니다. 동의하지 않아도 앱의 모든 기능을 사용할 수 있습니다.</p>
+    <h3>7. 방침 변경</h3>
+    <p>본 방침은 변경될 수 있으며, 중요한 변경 사항은 앱 업데이트를 통해 안내합니다. 최신 방침은 이 페이지에서 확인하세요.</p>
+    <h3>8. 문의</h3>
+    <p>개인정보 관련 문의사항이 있으시면 아래로 연락해 주세요.</p>
+    <a class="contact-btn" href="mailto:support@graze.game">support@graze.game</a>
+  </section>
+  <section id="support">
+    <h2>지원</h2>
+    <div class="card">
+      <h3>자주 묻는 질문</h3>
+      <p><strong style="color:#fff">Q. 구매한 아이템이 사라졌어요.</strong></p>
+      <p>설정 → 구매 복원 버튼을 눌러 복원할 수 있습니다. 같은 Apple ID로 로그인되어 있는지 확인해 주세요.</p>
+      <p style="margin-top:16px"><strong style="color:#fff">Q. 게임 센터 순위표가 보이지 않아요.</strong></p>
+      <p>설정 앱에서 Game Center가 활성화되어 있는지 확인해 주세요.</p>
+      <p style="margin-top:16px"><strong style="color:#fff">Q. 광고가 너무 많이 나와요.</strong></p>
+      <p>광고 제거(영구) 구매 후 설정에서 구매 복원을 하면 광고 없이 플레이할 수 있습니다.</p>
+      <p style="margin-top:16px"><strong style="color:#fff">Q. 데이터를 삭제하고 싶어요.</strong></p>
+      <p>앱을 삭제하면 기기의 모든 게임 데이터가 삭제됩니다.</p>
+    </div>
+    <div class="card">
+      <h3>문의하기</h3>
+      <p>버그 신고, 환불 문의, 기타 문의는 아래 이메일로 보내주세요. 보통 1–3 영업일 내에 답변드립니다.</p>
+      <a class="contact-btn" href="mailto:support@graze.game">support@graze.game</a>
+    </div>
+    <div class="card">
+      <h3>앱 정보</h3>
+      <p>GRAZE — 스치면 강해진다</p>
+      <p>수직 슈팅 게임 · iOS</p>
+    </div>
+  </section>
+</div>
+<script>
+function show(id, el) {
+  document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  el.classList.add('active');
+}
+</script>
+</body>
+</html>
